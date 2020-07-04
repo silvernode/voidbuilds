@@ -1,0 +1,119 @@
+#GRUB
+    grub-i386-efi
+    grub-x86_64-efi
+
+#BASE PKGS
+    dialog 
+    cryptsetup 
+    lvm2 
+    mdadm 
+
+# XORG PACKAGES
+    xorg-minimal 
+    xorg-input-drivers 
+    xorg-video-drivers
+    xrandr
+    setxkbmap 
+    xauth
+    vdpauinfo
+    libvdpau-va-gl
+    font-misc-misc 
+    terminus-font 
+    dejavu-fonts-ttf
+    dbus-elogind-x11
+    
+
+# KERNAL
+    linux-firmware-network
+
+
+# SOUND
+    alsa-plugins-pulseaudio
+    paprefs
+    pavucontrol
+    pipewire
+    alsa-utils
+    gstreamer1-pipewire
+
+# NETWORK
+    NetworkManager
+    network-manager-applet
+    ntp
+    wget
+    
+
+# DESKTOP ENVIRONMENT
+    lxdm
+    xfce4 
+    xfce4-plugins
+    xdg-utils
+    xdg-desktop-portal
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-kde
+    xdg-user-dirs
+    xdg-user-dirs-gtk
+    libappindicator
+    AppStream
+
+
+# LOOK AND FEEL
+    adwaita-icon-theme
+    Adapta
+    gnome-themes-standard
+
+# FILE SYSTEM
+    ntfs-3g
+    exfat-utils
+    fuse-exfat
+    gvfs-afc 
+    gvfs-mtp 
+    gvfs-smb 
+    udisks2
+    gparted
+
+# PACKAGE MANAGEMENT
+    flatpak
+    tuxc
+    octoxbps
+    topgrade
+
+# AUTH
+    elogind
+    dbus-elogind
+    gksu
+    gnome-keyring
+
+# DEVELOPMENT
+    git
+    
+# REPOSITORIES
+    void-repo-multilib
+    void-repo-nonfree
+
+#USERLAND PACKAGES
+
+    
+    
+    
+    
+    
+    
+    
+    
+     
+    
+    
+    upower
+    
+    zenity
+    bash-completion
+    nano
+    
+    vim
+    xterm
+    htop
+    dtrx
+    p7zip
+    firefox
+    
+    
