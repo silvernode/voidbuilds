@@ -85,35 +85,26 @@
 
 # DEVELOPMENT
     git
-    
+    zenity
+# ARCHIVE SOFTWARE
+    dtrx
+    p7zip
+
+# TEXT EDITORS
+    vim
+    nano
+
+# POWER MANAGEMENT
+    upower
+
+# UTILITIES
+    xterm
+    htop
+    bash-completion
+
+# INTERNET
+    firefox
+
 # REPOSITORIES
     void-repo-multilib
     void-repo-nonfree
-
-#USERLAND PACKAGES
-
-    
-    
-    
-    
-    
-    
-    
-    
-     
-    
-    
-    upower
-    
-    zenity
-    bash-completion
-    nano
-    
-    vim
-    xterm
-    htop
-    dtrx
-    p7zip
-    firefox
-    
-    
