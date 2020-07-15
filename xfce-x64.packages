@@ -25,7 +25,7 @@
 
 # KERNAL
     linux-firmware-network
-
+    dkms
 
 # SOUND
     alsa-plugins-pulseaudio
@@ -86,13 +86,14 @@
 # DEVELOPMENT
     git
     zenity
+
 # ARCHIVE SOFTWARE
     dtrx
     p7zip
 
 # TEXT EDITORS
     vim
-    nano
+    micro
 
 # POWER MANAGEMENT
     upower
@@ -101,6 +102,9 @@
     xterm
     htop
     bash-completion
+    rsync
+    psmisc
+    unzip
 
 # INTERNET
     firefox
@@ -108,3 +112,7 @@
 # REPOSITORIES
     void-repo-multilib
     void-repo-nonfree
+
+
+
+

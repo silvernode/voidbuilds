@@ -15,6 +15,7 @@ xorg-video-drivers
 setxkbmap 
 xauth 
 xrandr
+micro
 font-misc-misc 
 terminus-font 
 dejavu-fonts-ttf 
@@ -72,3 +73,7 @@ network-manager-applet
 firefox
 Adapta
 adwaita-icon-theme
+rsync
+psmisc
+dkms
+unzip

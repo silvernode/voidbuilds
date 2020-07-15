@@ -29,7 +29,7 @@ alsa-plugins-pulseaudio
 #USERLAND PACKAGES
 wget
 lxdm
-nano
+micro
 xdg-utils
 xdg-desktop-portal
 xdg-desktop-portal-gtk
@@ -69,3 +69,7 @@ ntfs-3g
 gnome-keyring
 network-manager-applet
 qutebrowser
+rsync
+psmisc
+dkms
+unzip

@@ -50,7 +50,7 @@ upower
 flatpak
 zenity
 bash-completion
-nano
+micro
 xdg-utils
 vim
 git
@@ -79,3 +79,7 @@ network-manager-applet
 firefox
 gnome-themes-standard
 adwaita-icon-theme
+rsync
+psmisc
+dkms
+unzip

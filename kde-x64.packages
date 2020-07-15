@@ -30,7 +30,7 @@ fuse-exfat
 sddm
 konsole
 bash-completion
-nano
+micro
 git
 vim
 xdg-utils
@@ -84,3 +84,9 @@ kaccounts-providers
 dolphin
 adapta-kde
 adwaita-icon-theme
+rsync
+psmisc
+dkms
+unzip
+kcalc
+kwrite

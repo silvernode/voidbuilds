@@ -30,7 +30,7 @@ exfat-utils
 fuse-exfat
 wget
 lxdm
-nano
+micro
 xdg-utils
 xdg-desktop-portal
 xdg-desktop-portal-gtk
@@ -75,3 +75,7 @@ gnome-keyring
 network-manager-applet
 firefox
 adwaita-icon-theme
+rsync
+psmisc
+dkms
+unzip

@@ -29,7 +29,7 @@ exfat-utils
 fuse-exfat
 wget
 qt5-plugin-sqlite
-nano
+micro
 bash-completion
 git
 xdg-utils
@@ -72,3 +72,7 @@ network-manager-applet
 falkon
 papirus-icon-theme
 adwaita-icon-theme
+rsync
+psmisc
+dkms
+unzip
