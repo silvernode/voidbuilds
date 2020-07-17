@@ -23,7 +23,7 @@
     dbus-elogind-x11
     
 
-# KERNAL
+# KERNEL
     linux-firmware-network
     dkms
 
