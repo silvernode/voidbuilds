@@ -28,7 +28,6 @@ alsa-plugins-pulseaudio
 
 #USERLAND PACKAGES
 wget
-lxdm
 micro
 xdg-utils
 xdg-desktop-portal
