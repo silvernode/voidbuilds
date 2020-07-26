@@ -48,7 +48,7 @@ mvImages(){
 }
 
 runBuilds(){
-    TOTAL="9"
+    TOTAL="8"
     ERR_FILE="error-status.txt"
 
     if [ -f "${ERR_FILE}" ];then
@@ -186,26 +186,26 @@ runBuilds(){
     fi
 
 
-    echo "Building Image: DWM</br>" >> ${HTMLDIR}/${FILENAME}
-    echo "Building: DWM Image..."
-    sleep 1
-    ./dwm-x64.sh
+    #echo "Building Image: DWM</br>" >> ${HTMLDIR}/${FILENAME}
+    #echo "Building: DWM Image..."
+    #sleep 1
+    #./dwm-x64.sh
 
-    if [ "$(cat ${ERR_FILE})" = "ERR=1" ];then
-        echo "<b style="color:red">Build failed for image: 'MATE', trying again at 00:00 MST</b></br>" >> ${HTMLDIR}/${FILENAME}
-        rm ${ERR_FILE}
-        ${0} -bl
-    else
-        echo "9/${TOTAL} completed at $(date +%T)</br></br>" >> ${HTMLDIR}/${FILENAME}
-    fi
+    #if [ "$(cat ${ERR_FILE})" = "ERR=1" ];then
+     #   echo "<b style="color:red">Build failed for image: 'MATE', trying again at 00:00 MST</b></br>" >> ${HTMLDIR}/${FILENAME}
+      #  rm ${ERR_FILE}
+       # ${0} -bl
+    #else
+     #   echo "9/${TOTAL} completed at $(date +%T)</br></br>" >> ${HTMLDIR}/${FILENAME}
+    #fi
 
-    if [ ! -f sha256sums.txt ];then
+    #if [ ! -f sha256sums.txt ];then
         echo "sha manifest does not exist!"
-    else
-        echo "Signing checksum file</br>" >> ${HTMLDIR}/${FILENAME}
-        ./sign-file.sh -f sha256sums.txt
-        mvImages
-    fi
+    #else
+     #   echo "Signing checksum file</br>" >> ${HTMLDIR}/${FILENAME}
+      #  ./sign-file.sh -f sha256sums.txt
+       # mvImages
+    #fi
 
     
 
