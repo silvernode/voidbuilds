@@ -200,7 +200,7 @@ runBuilds(){
     #fi
 
     #if [ ! -f sha256sums.txt ];then
-        echo "sha manifest does not exist!"
+        #echo "sha manifest does not exist!"
     #else
      #   echo "Signing checksum file</br>" >> ${HTMLDIR}/${FILENAME}
       #  ./sign-file.sh -f sha256sums.txt
@@ -305,7 +305,19 @@ cleanUp(){
 # Clean: mklive xbps cache, build dir| Remove: old kernels, orphan packages
 
     BUILDDIR="build"
+    if [ "$(ls -A $BUILDDIR)" ];then
+        current=`date +%s`
+        last_modified=`stat -c "%Y" ${BUILDDIR}/`
 
+        if [ $(($current-$last_modified)) -gt 180 ]; then 
+            echo "Removing unused image files.."
+            rm -v build/*; 
+        else 
+            mvImages; 
+        fi
+        
+    fi
+    
     echo "[Cleaning up...]"
     echo "Checking for local XBPS cache dir..."
 
@@ -324,10 +336,7 @@ cleanUp(){
 
     echo "Checking for unused image files..." 
 
-    if [ "$(ls -A $BUILDDIR)" ];then
-        echo "Removing unused image files.."
-        rm build/*
-    fi
+    
 
     echo "Checking for and removing unused kernels..."
 
