@@ -23,14 +23,14 @@ mvImages(){
         mv sha256sums.txt.sig build
         mv build/* ${HTMLDIR}/${ISODIR}
     else
-        echo "${HTMLDIR}/${ISODIR} does not exist"
+        echo "${HTMLDIR}/ does not exist"
     fi
 
     if [ ! -d "${PKGLISTDIR}" ];then
         mkdir "${PKGLISTDIR}"
     fi
 
-    rm ${PKGLISTDIR}/*
+    rm -r ${PKGLISTDIR}/*
     cp base-x64.packages ${PKGLISTDIR}/base-x64.packages.txt
     cp cinnamon-x64.packages ${PKGLISTDIR}/cinnamon-x64.packages.txt
     cp e17-x64.packages ${PKGLISTDIR}/e17-x64.packages.txt
