@@ -15,7 +15,7 @@ retry=0
 
 until [ -f ${FILENAME}-x86_64-${KERNEL}-${DATE}.iso ];do
     ((retry++))
-    if [[ $retry - gt 2 ]];then
+    if [[ $retry -gt 2 ]];then
         break
     fi
 
