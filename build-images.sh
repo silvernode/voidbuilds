@@ -199,13 +199,13 @@ runBuilds(){
      #   echo "9/${TOTAL} completed at $(date +%T)</br></br>" >> ${HTMLDIR}/${FILENAME}
     #fi
 
-    #if [ ! -f sha256sums.txt ];then
-        #echo "sha manifest does not exist!"
-    #else
-     #   echo "Signing checksum file</br>" >> ${HTMLDIR}/${FILENAME}
-      #  ./sign-file.sh -f sha256sums.txt
-       # mvImages
-    #fi
+    if [ ! -f sha256sums.txt ];then
+        echo "sha manifest does not exist!"
+    else
+        echo "Signing checksum file</br>" >> ${HTMLDIR}/${FILENAME}
+        ./sign-file.sh -f sha256sums.txt
+        mvImages
+    fi
 
     
 
